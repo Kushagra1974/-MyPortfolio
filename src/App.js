@@ -1,24 +1,65 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from "./component/Card/Card"
+import { BrowserRouter } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <nav>
+          <div>
+            <span className="me"> Kushagra </span>
+          </div>
+          <div id="linkContainer">
+            <a href="https://github.com/Kushagra1974">GitHub</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+          </div>
+        </nav>
+        <div id="about">
+          <p>
+            Hello, I am Kushagra a React developer and a Computer Enthusiast.
+          </p>
+        </div>
+        <div id="projects">
+          <h1 id="projectheading">Projects</h1>
+          <div id="cardcontainer">
+            <Card sr="https://algorithm-visualizer121.herokuapp.com/" >
+              <h1>Algorithm Visualizer</h1>
+              <img src="viz.png" alt="img" />\
+              <p>A React app that visualize sorting algorithm
+                Merge Sort ,Quick Sort ,Select Sort and
+                Bubble Sort
+              </p>
+            </Card>
+            <Card sr="https://covid-tracker12.herokuapp.com/">
+              <h1>Covid Stats</h1>
+              <img src="covid.png" alt="img" />
+              <p>
+                A application to fetch real time information
+                form covide API and tells about active
+                cases, total deaths, total recovered from
+                covid in country it uses React and graph js
+                to display stats
+              </p>
+            </Card>
+          </div>
+        </div>
+        <div id="contact">
+          <h1>Contact me at</h1>
+          <p>
+            Email : kamle.kush2002@gmail.com
+          </p>
+          <a></a>
+          <a href="https://www.linkedin.com/in/kushagra-kamle-50737821b/">Linkedin</a>
+        </div>
+        <div id="resume">
+          <h1>Resume</h1>
+          <embed src="Resume.pdf" width="1000px" height="800px" />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

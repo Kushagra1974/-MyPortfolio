@@ -1,0 +1,43 @@
+.card {
+  width: 340px;
+  height: 470px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #333;
+}
+.btn {
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: "Roboto Slab";
+}
+.btn:hover {
+  background-color: #ccc;
+}
+.btn:active {
+  background-color: #999;
+}
+.card h1 {
+  color: black;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+.card img {
+  height: 250px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 3px;
+}
+.card p {
+  color: black;
+}
+.a {
+  text-decoration: none;
+}
