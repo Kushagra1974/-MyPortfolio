@@ -25,7 +25,7 @@ function App() {
         <div id="projects">
           <h1 id="projectheading">Projects</h1>
           <div id="cardcontainer">
-            <Card sr="https://algorithm-visualizer121.herokuapp.com/" >
+            <Card sr="https://elegant-roentgen-87eeb8.netlify.app/" >
               <h1>Algorithm Visualizer</h1>
               <img src="viz.png" alt="img" />\
               <p>A React app that visualize sorting algorithm
@@ -33,7 +33,7 @@ function App() {
                 Bubble Sort
               </p>
             </Card>
-            <Card sr="https://covid-tracker12.herokuapp.com/">
+            <Card sr="https://vigorous-mirzakhani-fca761.netlify.app/">
               <h1>Covid Stats</h1>
               <img src="covid.png" alt="img" />
               <p>
